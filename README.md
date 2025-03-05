@@ -36,7 +36,7 @@ GIF created with LICEcap
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+React hooks were a difficult concept
 
 ## License
 
