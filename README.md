@@ -2,7 +2,7 @@
 
 Submitted by: Ilan Leybman
 
-This web app: 10 Flashcards for the most import data structures and algorithms**
+This web app: 10 Flashcards for the most import data structures and algorithms
 
 Time spent: 2 hours spent in total
 
@@ -20,7 +20,7 @@ The following **optional** features are implemented:
 
 - [ ] Cards contains images in addition to or in place of text
 - [ ] Cards have different visual styles such as color based on their category
-  - [ ] *visual style implemented*
+- [ ] *visual style implemented*
 
 The following **additional** features are implemented:
 
@@ -36,7 +36,7 @@ GIF created with LICEcap
 
 ## Notes
 
-React hooks were a difficult concept
+React hooks were a difficult concept to understand. I am going to need more practice with that moving forward.
 
 ## License
 
