@@ -44,6 +44,16 @@ function IndexCard() {
         setFlip(!flip);
     }
 
+    // Get previous card
+    const prevCard = () => {
+        if (index <= 0) {
+            setIndex(0);
+        } else {
+            setIndex(index - 1);
+        }
+        setFlip(false);
+    }
+
     // Get the next card
     const nextCard = () => {
         if (index < computerScienceTerms.length - 1) { 
@@ -59,7 +69,10 @@ function IndexCard() {
             <button className="flashcard" onClick={flipCard}>
                 {flip ? term.type : term.description}
             </button>
-            <button className="flipCard" onClick={nextCard}>Next</button>
+            <div className='button-container'>
+                <button className="flipCard" onClick={prevCard}>Prev</button>
+                <button className="flipCard" onClick={nextCard}>Next</button>
+            </div>
         </>
     );
 }
