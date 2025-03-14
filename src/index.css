@@ -69,3 +69,9 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.termlength {
+  font-size: 1em;
+  margin-bottom: 1em;
+  display: inline;
+}

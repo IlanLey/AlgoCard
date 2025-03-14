@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import IndexCard from './IndexCard'
+import { TermLength } from './IndexCard'
 
 function App() {
 
@@ -8,9 +9,9 @@ function App() {
     <>
       <header>
           <section>
-            <h1>Data Structures & Algorithms</h1>
-            <h3>How good is your data structures and algorithms knowledge?</h3>
-            <p>Numbers of Cards: 10</p>
+            <h1>Computer Science Terms</h1>
+            <h3>How good is your computer science knowledge?</h3>
+            <p>Numbers of Cards: < TermLength/></p>
           </section>
       </header>
       <div>
