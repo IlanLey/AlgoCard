@@ -76,3 +76,11 @@ button:hover {
   margin-bottom: 1em;
   display: inline;
 }
+
+.shuffleCard {
+  background-color: red;
+}
+
+.shuffleCard:hover {
+  background-color: darkred;
+}

@@ -64,6 +64,12 @@ function IndexCard() {
         setFlip(false);
     }
 
+
+    // Shuffle Next Card
+    const shuffleCard = () => {
+        setIndex(Math.floor(Math.random() * computerScienceTerms.length));
+    }
+
     return (
         <>
             <button className="flashcard" onClick={flipCard}>
@@ -73,6 +79,7 @@ function IndexCard() {
                 <button className="flipCard" onClick={prevCard}>Prev</button>
                 <button className="flipCard" onClick={nextCard}>Next</button>
             </div>
+            <button className="shuffleCard" onClick={shuffleCard}>Shuffle</button>
         </>
     );
 }
