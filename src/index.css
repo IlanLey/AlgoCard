@@ -88,4 +88,33 @@ button:hover {
   display: flex;
   justify-content: center;
   gap: 15px;
+  height: 50px;
+}
+
+.feedback {
+  font-family: 'Inter', 'Avenir', 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.label {
+  text-align: center;
+  font-size: 1.15em;
+}
+
+.input-one {
+  margin: 7px;
+  border-radius: 2px;
+  border: none;
+  height: 20px;
+}
+.input-two {
+  margin: 7px;
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  height: 35px;
+  cursor: pointer;
 }

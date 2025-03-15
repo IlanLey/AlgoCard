@@ -29,12 +29,13 @@ function IndexCardForm ({currentTerm, onSubmission}) {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <label>
+                <label className="label">
                     Guess the answer here: 
                     <input 
                         type="text"
                         placeholder="Place your answer here..."
                         value = {userGuess}
+                        className="input-one"
                         
                         // Allow Typing in the Input Box
                         onChange={handleChange}                    
@@ -42,6 +43,7 @@ function IndexCardForm ({currentTerm, onSubmission}) {
                     <input
                         type="submit"
                         value="Submit Guess"
+                        className="input-two"
                     />
                 </label>
             </form>
