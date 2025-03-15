@@ -11,7 +11,10 @@ function App() {
           <section>
             <h1>Computer Science Terms</h1>
             <h3>How good is your computer science knowledge?</h3>
-            <p>Numbers of Cards: < TermLength/></p>
+          </section>
+          <section className="display-container">
+            <p>Numbers of Cards: </p>
+            < TermLength/> 
           </section>
       </header>
       <div>

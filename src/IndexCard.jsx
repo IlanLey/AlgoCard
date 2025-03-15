@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import IndexCardForm from './IndexCardForm';
 
 const computerScienceTerms = [
     { id: 1, type: "Array", description: "A collection of elements identified by index or key." },
@@ -41,17 +42,22 @@ function IndexCard() {
 
     // Flip the card
     const flipCard = () => {
-        setFlip(!flip);
+        if (hasSubmitted) {
+            setFlip(!flip);        
+        }
     }
+
+    const [hasSubmitted, setHasSubmitted] = useState(false);
 
     // Get previous card
     const prevCard = () => {
         if (index <= 0) {
-            setIndex(0);
+            setIndex(computerScienceTerms.length - 1);
         } else {
             setIndex(index - 1);
         }
         setFlip(false);
+        setHasSubmitted(false)
     }
 
     // Get the next card
@@ -62,8 +68,8 @@ function IndexCard() {
             setIndex(0);
         } 
         setFlip(false);
+        setHasSubmitted(false)
     }
-
 
     // Shuffle Next Card
     const shuffleCard = () => {
@@ -72,6 +78,11 @@ function IndexCard() {
 
     return (
         <>
+            <IndexCardForm 
+                key = {index}
+                currentTerm = {term}
+                onSubmission = {setHasSubmitted}
+            />
             <button className="flashcard" onClick={flipCard}>
                 {flip ? term.type : term.description}
             </button>

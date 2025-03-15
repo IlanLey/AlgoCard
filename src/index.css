@@ -72,7 +72,6 @@ button:hover {
 }
 
 .termlength {
-  font-size: 1em;
   margin-bottom: 1em;
   display: inline;
 }
@@ -83,4 +82,10 @@ button:hover {
 
 .shuffleCard:hover {
   background-color: darkred;
+}
+
+.display-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
