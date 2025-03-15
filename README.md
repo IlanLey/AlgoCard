@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](./public/flashcards.gif "Video Walkthrough")
+![Video Walkthrough](./public/flashcard.gif "Video Walkthrough")
 
 GIF created with LICEcap
 
