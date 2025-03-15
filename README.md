@@ -1,4 +1,4 @@
-# Web Development Project 3 - *Computer Science Flashcards*
+# Web Development Project 3 - *AlgoCards*
 
 Submitted by: **Ilan Leybman**
 
